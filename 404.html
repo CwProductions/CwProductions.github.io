@@ -1,1 +1,49 @@
-
+<script><!DOCTYPE html>
+<html>
+  <head>
+    <title>404 Error</title>
+  </head>
+<style>
+	body {
+		color: white;
+		background-color: black;
+		font-family: sans-serif;
+}
+	h3 {
+		color: grey;
+}
+	table {
+		 border-radius: 5px;
+						border-style: solid;
+            border-color: white;
+            border-width: thin;
+						border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+  <body>
+    <h1>404 Error</h1>
+		<h3>Page not found</h3>
+		<p>Check the url you enter, the one you have entered currently is invalid and does not work. Press retry to reload</p>
+		<table id = "Tbl">
+  <tr>
+    <th>Requested Url</th>
+    <th>Error</th>
+    <th>Retry</th>
+  </tr>
+  <tr>
+    <td>There was a problem finding the requested url</td>
+    <td>404</td>
+    <td><button onclick = Refresh()>Retry</button></td>
+  </tr>
+</table>
+  </body>
+function Refresh() {
+ location.reload()
+}
+</script>
+</html>
