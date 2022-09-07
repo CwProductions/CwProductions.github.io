@@ -1,4 +1,4 @@
-var drawmain = function() {
+drawmain = function() {
   var backgroundColor = color(255, 255, 255);
 var nodeColor = color(40, 168, 107);
 var edgeColor = color(34, 68, 204);
