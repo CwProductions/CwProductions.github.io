@@ -1,5 +1,6 @@
-drawmain = function() {
-  var backgroundColor = color(255, 255, 255);
+var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        var backgroundColor = color(255, 255, 255);
 var nodeColor = color(40, 168, 107);
 var edgeColor = color(34, 68, 204);
 var nodeSize = 8;
@@ -111,7 +112,10 @@ mouseDragged = function() {
         rotateX3D(dy, nodes);
     }
 };
-   
-}
- var canvas = document.getElementById("mycanvas"); 
-    var processingInstance = new Processing(canvas, drawmain); 
+
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas"); 
+    // Pass the function sketchProc
+    var processingInstance = new Processing(canvas, sketchProc); 
