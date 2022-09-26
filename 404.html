@@ -36,7 +36,7 @@ td, th {
     <th>Retry</th>
   </tr>
   <tr>
-    <td>There was a problem finding the requested url</td>
+    <td id="r"></td>
     <td>404</td>
     <td><button onclick = Refresh()>Retry</button></td>
   </tr>
@@ -45,6 +45,10 @@ td, th {
 <script>
 function Refresh() {
  location.reload()
+}
+function r(){
+	var obj = document.getElementById('r')
+	obj.innerHTML = location
 }
 </script>
 </html>
